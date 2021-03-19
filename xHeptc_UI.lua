@@ -121,7 +121,7 @@ local themeStyles = {
         ElementColor = Color3.fromRGB(24, 24, 24)
     },
     Fludex = {
-        SchemeColor = Color3.fromRGB(rCode, gCode, bCode),
+        SchemeColor = Color3.new(rCode, gCode, bCode),
         Background = Color3.fromRGB(13, 15, 12),
         Header = Color3.fromRGB(36, 38, 35),
         TextColor = Color3.fromRGB(152, 99, 53),
