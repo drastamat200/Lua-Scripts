@@ -10,7 +10,6 @@ local run = game:GetService("RunService")
         local gCode = (math.sin(workspace.DistributedGameTime) / 2) + 0.5
         local bCode = (math.sin(workspace.DistributedGameTime * 1.5) / 2) + 0.5
         local rgbCoderX = Color3.new(r, g, b)
-        script.Parent.BackgroundColor3 = color
     end
 
 local Utility = {}
@@ -121,7 +120,7 @@ local themeStyles = {
         ElementColor = Color3.fromRGB(24, 24, 24)
     },
     Fludex = {
-        SchemeColor = Color3.new(rCode, gCode, bCode),
+        SchemeColor = Color3.fromRGB(rCode, gCode, bCode),
         Background = Color3.fromRGB(13, 15, 12),
         Header = Color3.fromRGB(36, 38, 35),
         TextColor = Color3.fromRGB(152, 99, 53),
@@ -175,6 +174,8 @@ function Kavo.CreateLib(kavName, themeList)
         themeList = themeStyles.Sentinel
     elseif themeList == "Synapse" then
         themeList = themeStyles.Synapse
+    elseif themeList == "Fludex" then
+        themeList = themeStyles.Fludex
     else
         if themeList.SchemeColor == nil then
             themeList.SchemeColor = Color3.fromRGB(74, 99, 135)
