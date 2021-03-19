@@ -6,7 +6,7 @@ local input = game:GetService("UserInputService")
 local run = game:GetService("RunService")
 
 
-
+local function()
     while wait() do
         rCoder = (math.sin(workspace.DistributedGameTime / 2) / 2) + 0.5
         gCodeg = (math.sin(workspace.DistributedGameTime) / 2) + 0.5
@@ -14,7 +14,7 @@ local run = game:GetService("RunService")
         CcolorC = Color3.new(rCoder, gCodeg, bCodeb)
         script.Parent.BackgroundColor3 = CcolorC
     end
-
+end
 
 local Utility = {}
 local Objects = {}
