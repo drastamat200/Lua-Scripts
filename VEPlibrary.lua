@@ -156,7 +156,7 @@ function VLib:Window(textgame)
 	MainTitle.Position = UDim2.new(0.324129045, 0, 0.0512162149, 0)
 	MainTitle.Size = UDim2.new(0, 71, 0, 20)
 	MainTitle.Font = Enum.Font.Gotham
-	MainTitle.Text = "Ness hub"
+	MainTitle.Text = MAINTTL
 	MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.TextSize = 14.000
 	MainTitle.TextXAlignment = Enum.TextXAlignment.Left
