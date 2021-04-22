@@ -845,7 +845,7 @@ function finity.new(isdark, gprojectName, thinProject)
 						cheat.list = finity:Create("ScrollingFrame", {
 							Name = "List",
 							BackgroundColor3 = theme.dropdown_background,
-							BackgroundTransparency = 0.5,
+							BackgroundTransparency = 0,
 							BorderSizePixel = 0,
 							Position = UDim2.new(0, 0, 1, 0),
 							Size = UDim2.new(1, 0, 0, 100),
