@@ -5,16 +5,7 @@
 	|  __|   | | | . ` | | |    | |    \   /  
 	| |     _| |_| |\  |_| |_   | |     | |   
 	|_|    |_____|_| \_|_____|  |_|     |_|   
-	
-	Source:
-		https://d3to-finity.000webhostapp.com/files/source-0.1.2.txt
-	Version:
-	 0.1.5
-	Date: 
-		April 21th, 2020
-	Author: 
-		detourious @ v3rmillion.netf
-	(Fludex#0767 resized it in the source)
+modify version by my lmoa
 --]]
 
 
@@ -59,7 +50,7 @@ finity.theme = { -- light
 
 finity.dark_theme = { -- dark
 	main_container = Color3.fromRGB(32, 32, 33),
-	separator_color = Color3.fromRGB(63, 63, 65),
+	separator_color = Color3.fromRGB(255, 255, 255),
 
 	text_color = Color3.fromRGB(206, 206, 206),
 
@@ -170,7 +161,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		finityData.ToggleKey = NewKey
 		
 		if not projectName then
-			self2.tip.Text = "Title Project Name"
+			self2.tip.Text = "Press '".. string.sub(tostring(NewKey), 14) .."' to hide this menu"
 		end
 		
 		if finityData.UpConnection then
@@ -230,7 +221,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		BackgroundColor3 = theme.main_container,
 		BorderSizePixel = 0,
 		Position = UDim2.new(0.5, 0, 0.5, 0),
-		Size = UDim2.new(0, 800, 0, 400), ------<==---------------------------------------=i resize this=-----------------------------------------------------------
+		Size = UDim2.new(0, 800, 0, 400),
 		ZIndex = 2,
 		ImageTransparency = 1
     })
@@ -822,7 +813,7 @@ function finity.new(isdark, gprojectName, thinProject)
 							ZIndex = 2,
 							Image = "rbxassetid://3570695787",
 							ImageColor3 = theme.dropdown_background,
-							ImageTransparency = 0,------------------------------------------------
+							ImageTransparency = 0.5,
 							ScaleType = Enum.ScaleType.Slice,
 							SliceCenter = Rect.new(100, 100, 100, 100),
 							SliceScale = 0.02
@@ -845,7 +836,7 @@ function finity.new(isdark, gprojectName, thinProject)
 						cheat.list = finity:Create("ScrollingFrame", {
 							Name = "List",
 							BackgroundColor3 = theme.dropdown_background,
-							BackgroundTransparency = 0,
+							BackgroundTransparency = 0.6,
 							BorderSizePixel = 0,
 							Position = UDim2.new(0, 0, 1, 0),
 							Size = UDim2.new(1, 0, 0, 100),
@@ -1513,8 +1504,5 @@ function finity.new(isdark, gprojectName, thinProject)
 
 	return self2, finityData
 end
-
-
-
 
 return finity
