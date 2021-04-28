@@ -5,7 +5,6 @@
 	|  __|   | | | . ` | | |    | |    \   /  
 	| |     _| |_| |\  |_| |_   | |     | |   
 	|_|    |_____|_| \_|_____|  |_|     |_|   
-modify version by my lmoa
 --]]
 
 
@@ -1024,7 +1023,7 @@ function finity.new(isdark, gprojectName, thinProject)
 							PlaceholderText = placeholdertext or "Value",
 							TextSize = 13,
                             TextXAlignment = Enum.TextXAlignment.Center,
-                            ClearTextOnFocus = false
+                            ClearTextOnFocus = true
 						})
 
 						cheat.background.MouseEnter:Connect(function()
