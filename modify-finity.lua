@@ -1,13 +1,3 @@
---[[
-	 ______ _____ _   _ _____ _________     __
-	|  ____|_   _| \ | |_   _|__   __\ \   / /
-	| |__    | | |  \| | | |    | |   \ \_/ / 
-	|  __|   | | | . ` | | |    | |    \   /  
-	| |     _| |_| |\  |_| |_   | |     | |   
-	|_|    |_____|_| \_|_____|  |_|     |_|   
---]]
-
-
 local finity = {}
 finity.gs = {}
 
@@ -48,10 +38,10 @@ finity.theme = { -- light
 }
 
 finity.dark_theme = { -- dark
-	main_container = Color3.fromRGB(32, 32, 33),
-	separator_color = Color3.fromRGB(55, 55, 55),
+	main_container = Color3.fromRGB(47, 49, 54),
+	separator_color = Color3.fromRGB(225, 225, 225),
 
-	text_color = Color3.fromRGB(206, 206, 206),
+	text_color = Color3.fromRGB(235, 235, 235),
 
 	category_button_background = Color3.fromRGB(63, 62, 65),
 	category_button_border = Color3.fromRGB(72, 71, 74),
