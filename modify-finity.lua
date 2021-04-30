@@ -1,3 +1,14 @@
+--[[
+	 ______ _____ _   _ _____ _________     __
+	|  ____|_   _| \ | |_   _|__   __\ \   / /
+	| |__    | | |  \| | | |    | |   \ \_/ / 
+	|  __|   | | | . ` | | |    | |    \   /  
+	| |     _| |_| |\  |_| |_   | |     | |   
+	|_|    |_____|_| \_|_____|  |_|     |_|   
+modify version by my lmoa
+--]]
+
+
 local finity = {}
 finity.gs = {}
 
@@ -38,8 +49,8 @@ finity.theme = { -- light
 }
 
 finity.dark_theme = { -- dark
-	main_container = Color3.fromRGB(47, 49, 54),
-	separator_color = Color3.fromRGB(225, 225, 225),
+	main_container = Color3.fromRGB(27, 27, 27),
+	separator_color = Color3.fromRGB(50, 50, 50),
 
 	text_color = Color3.fromRGB(235, 235, 235),
 
