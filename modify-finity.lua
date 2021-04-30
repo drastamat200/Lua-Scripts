@@ -49,7 +49,7 @@ finity.theme = { -- light
 }
 
 finity.dark_theme = { -- dark
-	main_container = Color3.fromRGB(27, 27, 27),
+	main_container = Color3.fromRGB(30, 30, 30),
 	separator_color = Color3.fromRGB(50, 50, 50),
 
 	text_color = Color3.fromRGB(235, 235, 235),
