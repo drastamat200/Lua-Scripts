@@ -121,7 +121,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	local self2 = finityObject
 	local self = finity
 
-	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild(FinityTostringName) and not _G.DubbleFinity = true then
+	if not finity.gs["RunService"]:IsStudio() and not _G.DubbleFinity = true then
 		warn("You Cant Execute 2 Uis! And This Finity Is Modify By Woutt#4106")
 		
 		return
