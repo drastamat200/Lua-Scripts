@@ -121,11 +121,10 @@ function finity.new(isdark, gprojectName, thinProject)
 	local self2 = finityObject
 	local self = finity
 
-	for i,v in pairs(game:GetService("CoreGui"):GetDescendants())
-		if not finity.gs["RunService"]:IsStudio() and v.Parent.Name == "Container" and v.Parent.Parent.Name == "Separator" then
-			warn("You Cant Execute 2 Uis! And This Finity Is Modify By Woutt#4106")
-			return
-		end
+	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild(FinityTostringName) then
+		warn("You Cant Execute 2 Uis! And This Finity Is Modify By Woutt#4106")
+		
+		return
 	end
 
 	local theme = finity.theme
