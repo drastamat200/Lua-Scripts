@@ -1,14 +1,4 @@
---[[
-	 ______ _____ _   _ _____ _________     __
-	|  ____|_   _| \ | |_   _|__   __\ \   / /
-	| |__    | | |  \| | | |    | |   \ \_/ / 
-	|  __|   | | | . ` | | |    | |    \   /  
-	| |     _| |_| |\  |_| |_   | |     | |   
-	|_|    |_____|_| \_|_____|  |_|     |_|   
-modify version by my lmoa
---]]
-
-
+local tostringName = tostring(math.random(100,99999999))
 local finity = {}
 finity.gs = {}
 
@@ -131,8 +121,8 @@ function finity.new(isdark, gprojectName, thinProject)
 	local self2 = finityObject
 	local self = finity
 
-	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild("FinityUI") then
-		warn("finity:", "instance already exists in coregui!")
+	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild(tostringName) then
+		warn("You Cant Execute 2 Uis! And This Finity Is Modify By Woutt#4106")
 		
 		return
 	end
@@ -207,7 +197,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	end)
 
 	self2.userinterface = self:Create("ScreenGui", {
-		Name = "FinityUI",
+		Name = tostringName,
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
 		ResetOnSpawn = false,
 	})
