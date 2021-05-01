@@ -1,4 +1,4 @@
-Finity_tostringName = tostring(math.random(100,99999999))
+FinityTostringName = tostring(math.random(100,99999999))
 local finity = {}
 finity.gs = {}
 
@@ -121,7 +121,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	local self2 = finityObject
 	local self = finity
 
-	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild(Finity_tostringName) then
+	if not finity.gs["RunService"]:IsStudio() and self.gs["CoreGui"]:FindFirstChild(FinityTostringName) then
 		warn("You Cant Execute 2 Uis! And This Finity Is Modify By Woutt#4106")
 		
 		return
@@ -197,7 +197,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	end)
 
 	self2.userinterface = self:Create("ScreenGui", {
-		Name = Finity_tostringName,
+		Name = FinityTostringName,
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
 		ResetOnSpawn = false,
 	})
