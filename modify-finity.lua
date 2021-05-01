@@ -121,7 +121,7 @@ function finity.new(isdark, gprojectName, thinProject)
 	local self2 = finityObject
 	local self = finity
 
-	for _,v in next,game:GetService("CoreGui"):GetDescendants()
+	for i,v in pairs(game:GetService("CoreGui"):GetDescendants())
 		if not finity.gs["RunService"]:IsStudio() and v.Parent.Name == "Container" and v.Parent.Parent.Name == "Separator" then
 			warn("You Cant Execute 2 Uis! And This Finity Is Modify By Woutt#4106")
 			return
