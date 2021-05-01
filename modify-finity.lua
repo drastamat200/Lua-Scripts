@@ -1,4 +1,4 @@
-Finity_tostringName = tostring(math.random(100,99999999))
+Finity_tostringName = tostring(math.random(10203,9999999999))
 local finity = {}
 finity.gs = {}
 
