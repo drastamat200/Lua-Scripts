@@ -563,7 +563,19 @@ function finity.new(isdark, gprojectName, thinProject)
 							SliceScale = 0.06,
 						})
 
-
+						cheat.checkboxbutton = finity:Create("ImageButton", {
+							AnchorPoint = Vector2.new(0.5, 0.5),
+							Name = "CheckboxButton",
+							BackgroundColor3 = Color3.new(1, 1, 1),
+							BackgroundTransparency = 0,
+							Position = UDim2.new(0.5, 0, 0.5, 0),
+							Size = UDim2.new(0, 14, 0, 14),
+							ZIndex = 2,
+							ImageColor3 = theme.checkbox_inner,
+							ScaleType = Enum.ScaleType.Slice,
+							SliceCenter = Rect.new(100, 100, 100, 100),
+							SliceScale = 0.04
+						})
 
 						if data then
 							if data.enabled then
