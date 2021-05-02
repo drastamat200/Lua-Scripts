@@ -19,7 +19,7 @@ finity.dark_theme = { -- dark
 
 	checkbox_checked = Color3.fromRGB(132, 255, 130),
 	checkbox_outer = Color3.fromRGB(84, 81, 86),
-	checkbox_inner = Color3.fromRGB(84, 81, 86),
+	checkbox_inner = Color3.fromRGB(130, 130, 130),
 
 	slider_color = Color3.fromRGB(177, 177, 177),
 	slider_color_sliding = Color3.fromRGB(132, 255, 130),
@@ -570,7 +570,8 @@ function finity.new(isdark, gprojectName, thinProject)
 							BackgroundTransparency = 1,
 							Position = UDim2.new(0.5, 0, 0.5, 0),
 							Size = UDim2.new(0, 14, 0, 14),
-							ZIndex = 3,
+							ZIndex = 2,
+							Image = "rbxassetid://3570695787",
 							ImageColor3 = theme.checkbox_inner,
 							ScaleType = Enum.ScaleType.Slice,
 							SliceCenter = Rect.new(100, 100, 100, 100),
