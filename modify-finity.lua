@@ -19,7 +19,7 @@ finity.dark_theme = { -- dark
 
 	checkbox_checked = Color3.fromRGB(132, 255, 130),
 	checkbox_outer = Color3.fromRGB(84, 81, 86),
-	checkbox_inner = Color3.fromRGB(130, 130, 130),
+	checkbox_inner = Color3.fromRGB(120, 120, 120),
 
 	slider_color = Color3.fromRGB(177, 177, 177),
 	slider_color_sliding = Color3.fromRGB(132, 255, 130),
@@ -184,6 +184,7 @@ function finity.new(isdark, gprojectName, thinProject)
 		Size = UDim2.new(0, 800, 0, 400),
 		ZIndex = 2,
 		ImageTransparency = 1
+        
     })
     
     self2.modal = self:Create("TextButton", {
